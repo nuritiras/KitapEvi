@@ -4,9 +4,14 @@ namespace KitapEvi.Controllers
 {
     public class KitapController : Controller
     {
-        public string Index()
+        public JsonResult JsonCikti()
         {
-            return "Kitap controller sınıfındaki Index metodu çalıştı";
+            return Json(new
+            {
+                Id = 1,
+                Seviye = "11. Sınıf",
+                KitapAdi = "WEB TABANLI UYGULAMA GELİŞTİRME"
+            });
         }
         // Diğer action metotlar tanımlanır.
     }

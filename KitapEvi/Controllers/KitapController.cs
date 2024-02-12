@@ -18,6 +18,12 @@ namespace KitapEvi.Controllers
         {
             return $"Parametreden gelen değer: {id}";
         }
+
+        [Route("Kitap/Listeler/{id}/{ad}")]
+        public string Listeler(int id, string ad)
+        {
+            return $"Parametreden gelen id={id}, ad={ad}";
+        }
         // Diğer action metotlar tanımlanır.
     }
 }

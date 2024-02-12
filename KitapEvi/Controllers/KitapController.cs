@@ -13,6 +13,11 @@ namespace KitapEvi.Controllers
                 KitapAdi = "WEB TABANLI UYGULAMA GELİŞTİRME"
             });
         }
+
+        public string Liste(int id)
+        {
+            return $"Parametreden gelen değer: {id}";
+        }
         // Diğer action metotlar tanımlanır.
     }
 }
